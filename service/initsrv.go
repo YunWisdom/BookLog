@@ -1,18 +1,4 @@
-// Pipe - A small and beautiful blogging platform written in golang.
-// Copyright (C) 2017-2019, b3log.org & hacpai.com
-//
-// This program is free software: you can redistribute it and/or modify
-// it under the terms of the GNU General Public License as published by
-// the Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-//
-// This program is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
-//
-// You should have received a copy of the GNU General Public License
-// along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
 
 package service
 
@@ -22,9 +8,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/b3log/pipe/model"
-	"github.com/b3log/pipe/theme"
-	"github.com/b3log/pipe/util"
+	"github.com/YunWisdom/BookLog/model"
+	"github.com/YunWisdom/BookLog/theme"
+	"github.com/YunWisdom/BookLog/util"
 	"github.com/jinzhu/gorm"
 )
 
@@ -229,9 +215,9 @@ func initNavigation(tx *gorm.DB, blogID uint64) error {
 func helloWorld(tx *gorm.DB, admin *model.User, blogID uint64) error {
 	content := `![Hello](` + util.RandImage() + `?imageView2/1/w/960/h/520/interlace/1/q/100)
 
-欢迎使用 [Pipe](https://github.com/b3log/pipe) 博客平台。这是一篇自动生成的演示文章，编辑或者删除它，然后开始你的独立博客之旅！
+欢迎使用 [Pipe](https://github.com/YunWisdom/BookLog) 博客平台。这是一篇自动生成的演示文章，编辑或者删除它，然后开始你的独立博客之旅！
 
-Pipe 博客平台是一个开源项目，如果你觉得它很赞，请到[项目首页](https://github.com/b3log/pipe)给颗星鼓励一下！`
+Pipe 博客平台是一个开源项目，如果你觉得它很赞，请到[项目首页](https://github.com/YunWisdom/BookLog)给颗星鼓励一下！`
 
 	now := time.Now()
 	article := &model.Article{

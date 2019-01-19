@@ -9,3 +9,4 @@ before_install:
 #script:
 #  - ./coverage.sh
 #  - $HOME/gopath/bin/goveralls -coverprofile=profile.cov -service=travis-ci -repotoken ZmKtLQ0DmRqgHvMMXFYFVRzTu9FVWv2kS
+#  // CREATE DATABASE pipe CHARACTER SET utf8 COLLATE utf8_general_ci;

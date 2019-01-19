@@ -5,6 +5,7 @@
 *.dylib
 header
 pipe
+BookLog
 
 # Test binary, build with `go test -c`
 *.test

@@ -1,18 +1,4 @@
-// Pipe - A small and beautiful blogging platform written in golang.
-// Copyright (C) 2017-2019, b3log.org & hacpai.com
-//
-// This program is free software: you can redistribute it and/or modify
-// it under the terms of the GNU General Public License as published by
-// the Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-//
-// This program is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
-//
-// You should have received a copy of the GNU General Public License
-// along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
 
 package model
 
@@ -50,7 +36,7 @@ const (
 	SettingNameBasicBlogTitle       = "basicBlogTitle"
 	SettingNameBasicCommentable     = "basicCommentable"
 	SettingNameBasicFooter          = "basicFooter"
-	SettingNameBasicHeader          = "basicHeader" // Removed from UI since v1.1.0 caused by issue 54 (https://github.com/b3log/pipe/issues/54)
+	SettingNameBasicHeader          = "basicHeader" // Removed from UI since v1.1.0 caused by issue 54 (https://github.com/YunWisdom/BookLog/issues/54)
 	SettingNameBasicNoticeBoard     = "basicNoticeBoard"
 	SettingNameBasicMetaDescription = "basicMetaDescription"
 	SettingNameBasicMetaKeywords    = "basicMetaKeywords"
@@ -61,8 +47,8 @@ const (
 // Setting values of category "basic".
 const (
 	SettingBasicFooterDefault           = "<!-- 这里可用于放置备案信息等，支持 Markdown -->"
-	SettingBasicHeaderDefault           = "<!-- https://github.com/b3log/pipe/issues/54 -->"
-	SettingBasicBasicNoticeBoardDefault = "<!-- 支持 Markdown -->本博客由 [Pipe](https://github.com/b3log/pipe) 强力驱动"
+	SettingBasicHeaderDefault           = "<!-- https://github.com/YunWisdom/BookLog/issues/54 -->"
+	SettingBasicBasicNoticeBoardDefault = "<!-- 支持 Markdown -->本博客由 [Pipe](https://github.com/YunWisdom/BookLog) 强力驱动"
 )
 
 // Setting names of category "preference".
